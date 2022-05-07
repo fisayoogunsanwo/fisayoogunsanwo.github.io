@@ -1,0 +1,108 @@
+body{  background-color: transparent;
+font-family: 'Courier New', Courier, monospace;
+background-image: url("../img/background.jpg");
+    background-size: 100vw 100vh;
+    width:100vw;
+    height: 100vh;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+padding: 0;
+margin:0;}
+
+
+
+#content{position:fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.16);
+    width:100vw;
+    height: 100vh;
+}
+
+#topic{font-size:1.7em;
+    color:rgb(230, 230, 230);
+padding-bottom: 25px;}
+
+.topic:hover{cursor: pointer;}
+
+.buttonsdiv{
+    display: flex;
+    justify-content:space-around;
+    width: 70%;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.buttons{border:1px solid black;
+    border-radius: 5px;
+text-decoration: none;
+padding:5px 10px;
+font-weight: bold;
+font-size: 1.2em;
+transition: 200ms ease-in-out;
+}
+
+#but1:hover{color: black;
+    background-color:#FF5050;
+}
+#but2:hover{color: black;
+    background-color:#79E21B;
+}
+#but3:hover{color: black;
+    background-color:#4a63d4;
+}
+
+.buttons:hover{transform:scale(1.2,1.2);}
+
+
+#but1, #but4, #but7 {color: #FF5050;
+    background-color:black;}
+#but2, #but5, #but8 {color: #79E21B;
+    background-color:black;}
+#but3, #but6, #but9 {color: #4a63d4;
+    background-color:black;}
+
+
+/* Page 1 */
+
+
+
+#page1content, #page2content, #page3content{
+   background-image: none;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;}
+
+
+#page1topic, #page2topic, #page3topic{font-size:1.1em;
+        color:black;
+    text-decoration: underline  3px;
+align-self: flex-start;}
+
+    img{width: 200px;
+    height: 300px;
+transition:0.4s ease-in-out;
+margin: 5px;}
+    img:hover{transform: scale(1.1);}
+
+        .imagesdiv{width:70%;
+        padding:50px;}
+
+        #page1content{
+                background-color: #ff5050bc; }
+
+/* Page 2 */
+#page2content{background-color: #59a814bc;}
+
+
+/* Page 3 */
+#page3content{background-color: #4a63d4bc;}
