@@ -32,7 +32,9 @@ padding-bottom: 25px;}
 
 .buttonsdiv{
     display: flex;
+    flex-direction: row;
     justify-content:space-around;
+    align-items: center;
     width: 70%;
     padding-bottom: 20px;
     margin-bottom: 15px;
@@ -46,17 +48,18 @@ font-size: 1.2em;
 transition: 200ms ease-in-out;
 }
 
-#but1:hover{color: black;
+.buttons:hover{transform:scale(1.2,1.2);}
+
+#but1:hover,#but4:hover, #but7:hover{color: black;
     background-color:#FF5050;
 }
-#but2:hover{color: black;
+#but2:hover,#but5:hover, #but8:hover{color: black;
     background-color:#79E21B;
 }
-#but3:hover{color: black;
+#but3:hover,#but6:hover, #but9:hover{color: black;
     background-color:#4a63d4;
 }
 
-.buttons:hover{transform:scale(1.2,1.2);}
 
 
 #but1, #but4, #but7 {color: #FF5050;
@@ -72,6 +75,7 @@ transition: 200ms ease-in-out;
 
 
 #page1content, #page2content, #page3content{
+    position: absolute;
    background-image: none;
     top: 0;
     left: 0;
@@ -88,14 +92,19 @@ transition: 200ms ease-in-out;
     text-decoration: underline  3px;
 align-self: flex-start;}
 
-    img{width: 200px;
-    height: 300px;
+    img{width: 10rem;
+    height: 15rem;
 transition:0.4s ease-in-out;
-margin: 5px;}
+margin: 5px;
+border-radius: 5px;}
     img:hover{transform: scale(1.1);}
 
-        .imagesdiv{width:70%;
-        padding:50px;}
+        .imagesdiv{width:80%;
+        padding:15px;
+    display:flex;
+    flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;}
 
         #page1content{
                 background-color: #ff5050bc; }
@@ -106,3 +115,23 @@ margin: 5px;}
 
 /* Page 3 */
 #page3content{background-color: #4a63d4bc;}
+
+@media screen and (max-width: 480px) {
+    #topic, #page1topic, #page2topic, #page3topic{font-size:0.7rem;
+    padding-bottom: 2px;
+}
+
+    img{width: 5rem;
+        height: 7rem;}
+
+    .buttons{
+    font-size: 1rem;
+    }
+    .buttonsdiv{
+        width: 85%;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        gap:0.1cm;
+    }
+    
+}
